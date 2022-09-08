@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chalenges</title>
+</head>
+<body>
+    <h1>Chalenge 25</h1>
+    <div>
+        <p>This is Paragraph Number 1</p>
+    </div>
+    <button>Add a paragraph</button>
+    <button>Remove a Paragraph</button>
+    <script>
+        var divTag=document.querySelector('div');
+        var btnadd=document.querySelectorAll('button')[0];
+        var btnRemove=document.querySelectorAll('button')[1];
+        var paragraphCounter=1;
+        btnadd.addEventListener('click',function(){
+            paragraphCounter++;
+            var newParagraph=document.createElement('p');
+            var newText=document.createTextNode(`This is Paragraph Number ${paragraphCounter}`);
+            newParagraph.appendChild(newText);
+            divTag.appendChild(newParagraph);
+
+        });
+        btnRemove.addEventListener('click',function(){
+            var allParagraphs=document.querySelectorAll('p');
+            if (allParagraphs.length==1){
+                alert("that's the last paragraph");
+            }else{
+                divTag.removeChild(divTag.children[allParagraphs.length-1]);
+                paragraphCounter--;
+            }
+            
+        })
+    </script>
+</body>
+</html>

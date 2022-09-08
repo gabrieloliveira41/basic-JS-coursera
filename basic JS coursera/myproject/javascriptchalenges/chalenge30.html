@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chalenges</title>
+    <style>
+        body{height: 3000px;}
+        .one{background-color: beige;transition: all 3s;}
+        .two{background-color: blueviolet;transition: all 3s;}
+        .three{background-color: coral;transition: all 3s;}
+        .four{background-color: cornflowerblue;transition: all 3s;}
+        .five{background-color: darkgoldenrod;transition: all 3s;}
+    </style>
+</head>
+<body class="one">
+    <h1>Chalenge 30</h1>
+    <p>Press the B key to turn the page beige</p>
+    <p>Press the V key to turn the page blueviolet</p>
+    <p>Press the C key to turn the page coral</p>
+    <p>Press the F key to turn the page cornflowerblue</p>
+    <p>Press the G key to turn the page darkgoldenrod</p>
+    <script>
+        var backgroundColor=document.querySelector('body');
+        document.addEventListener("keydown",function(event){
+
+            switch(event.key){
+                case "B": backgroundColor.className="one"; break;
+                case "V": backgroundColor.className="two";break;
+                case "C": backgroundColor.className="three";break;
+                case "F": backgroundColor.className="four";break;
+                case "G": backgroundColor.className="five";break;
+                default: alert("YOU FOOL! ENTER A VALID KEY");
+            }
+        });
+
+    </script>
+</body>
+</html>

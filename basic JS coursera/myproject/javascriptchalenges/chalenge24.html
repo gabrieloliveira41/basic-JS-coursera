@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chalenges</title>
+</head>
+<body>
+    <h1>Chalenge 24</h1>
+    <div>
+        <p>here is the first paragraph of text</p>
+    </div>
+    <button>add a paragraph</button>
+    <script>
+        var divTag=document.querySelector('div');
+        var btn=document.querySelector('button');
+        btn.addEventListener('click',function(){
+            var newParagraph=document.createElement('p');
+            var newText=document.createTextNode('A new Paragraph');
+            newParagraph.appendChild(newText);
+            divTag.appendChild(newParagraph);
+        });
+    </script>
+</body>
+</html>

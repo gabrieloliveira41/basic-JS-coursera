@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basic Challenges: Challenge 1</title>
+</head>
+<body>
+    <h1>JavaScript Basic Challenges</h1>
+    <h2>Challenge 1</h2>
+    <script>
+        var firstName="Gabriel";
+        var lastName="Pinto";
+        console.log(firstName);
+        console.log(lastName);
+        function selectColor(color){
+
+            if(color == "red" || color == "blue" || color == "yellow"){
+
+                var colorArray = [];
+
+                for(var i=0; i<color.length; i++ ){
+
+                    colorArray.push(color[i]);
+
+                }
+
+                return colorArray;
+
+            }
+
+            else {
+
+                return `the ${color} is not a primary color`;
+
+            }
+
+        }
+
+        console.log(selectColor("blue"));
+    </script>
+</body>
+</html>

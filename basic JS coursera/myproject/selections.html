@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Selections and Booleans</title>
+</head>
+<body>
+    <h1>Testing Selections!</h1>
+
+    <script>
+        var red=true;
+        var Blue=false;
+        var green;
+        //javascript interpreta variaveis indefinidas como false
+        var MyNum=5;
+        //javascript interpreta o 0 como false e qualquer outro numero como true
+        var OtherNum=6;
+        var NotNum=null;
+        var myValue=NotNum-MyNum;
+
+       /* if(NotNum){
+            console.log("the statement is true");
+        
+        }else{
+            console.log("the statement is false");
+        }*/
+        var colors=["red","green","blue","yellow"];
+        var selectedcolor=colors[0];
+        /*if (selectedcolor=="red"){
+            console.log("the color is  red");
+        }else if(selectedcolor=="blue"){
+            console.log("the color is  blue");
+        }else if(selectedcolor=="green"){
+            console.log("the color is green");
+        }else if(selectedcolor=="yellow"){
+            console.log("the color is  yellow");
+        }
+
+        */
+        switch(selectedcolor){
+            case "red":console.log("the color is red"); break;
+            case "green":console.log("the color is green"); break;
+            case "blue":console.log("the color is blue"); break;
+            case "yellow":console.log("the color is yellow"); break;
+            default: console.log("there was an error!");
+       }
+    </script>
+
+</body>
+</html>

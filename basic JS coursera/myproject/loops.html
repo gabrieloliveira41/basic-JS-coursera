@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Loops</title>
+</head>
+<body>
+    <h1>Loops in JS</h1>
+    <script>
+        /*for(var i =0;i<10;i++){
+            console.log("estamos na linha:",i+1);
+        }
+        var colors=["red","blue","yellow","green"];
+        for(var i =0;i<colors.length;i++){
+            console.log(colors[i]);
+        }
+        var food=["grapes","cheese","bread","olives"];
+        for(var eachitem of food){
+            console.log(eachitem);
+        }
+        var statement="a string can be treated like an array";
+        for (i=0;i<statement.length;i++){
+            console.log(statement[i]+'\n');
+        }*/ 
+        var incrementor =0;
+        var text = "";
+        var i=0;
+        while(i<10){
+            /*text+=`the incrementor has gone up to ${incrementor} \n`
+            incrementor++;*/ 
+            text+= `the incrementor is ${i}, and squared it is ${i * i}\n`;
+            i++;
+        }
+        console.log(text);
+
+    </script>
+</body>
+</html>

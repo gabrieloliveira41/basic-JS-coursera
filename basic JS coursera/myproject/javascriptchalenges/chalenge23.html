@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chalenges</title>
+</head>
+<body>
+    <H1>Chalenge 23</H1>
+    <p>here is a paragraph of text</p>
+    <p>here is another paragraph</p>
+    <p>here is the third paragraph</p>
+    <button>be green now!!</button>
+    <script>
+        const btn=document.querySelector('button');
+        const newParagraph=document.querySelectorAll('p')
+        btn.addEventListener('click',function(){
+            for(let i=0;i<newParagraph.length;i++){
+                newParagraph[i].style.color='green';
+            }
+        });
+    </script>
+</body>
+</html>

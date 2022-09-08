@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in JavaScript</title>
+</head>
+<body>
+    <h1>chalenge 13</h1>
+    <script>
+        function doStuff(){
+            var myString="here is a text";
+            var upperString=myString.toUpperCase();
+            console.log(myString);
+            console.log(upperString);
+        }
+        //doStuff();
+        function printingNumbers(){
+            var number=prompt("enter a number");
+            if (number<10){
+                for(var i=number;i>=0;i--){
+                    console.log(`here is a ${i}`)
+                }
+            }
+        }
+        //printingNumbers();
+        function upperMessage(message){
+            var upper =message.toUpperCase()
+            console.log(upper);
+        }
+        var randomMessage="a random message that will apper in upper case!";
+        //upperMessage(randomMessage);
+        function returnSum(num1,num2){
+            var sum=num1+num2;
+            return sum;
+        }
+        /*var numeber1=prompt("enter a number");
+        var number2=prompt("enter another number")*/
+        //console.log(returnSum(5,8));
+        var foods=["cheese","chiken","grapes","hamburguers"];
+        function randomInt(min,max){
+            /*var numOfValues=max-min+1;
+            var randomNum=Math.random();
+            var randomVal=randomNum*numOfValues;
+            var roundedRandomVal=Math.floor(randomVal);
+            var finalNumber=min+roundedRandomVal;*/
+            return Math.floor((max-min+1)*Math.random())+min;
+
+        }
+        //console.log(foods[randomInt(0,3)]);
+        function hello(name){
+            console.log(`Hello ${name}, and welcome`);
+            var myName=prompt("enter name");
+        }
+        
+        //var yourName=prompt("enter your name");
+        if(yourName=="" || yourName==null){
+            console.log(`you didn't give me a name`);
+        }else{
+            hello(yourName);
+        }
+        
+        //greeting();
+    </script>
+
+</body>
+</html>

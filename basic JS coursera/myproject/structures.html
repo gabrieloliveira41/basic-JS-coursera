@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structures</title>
+</head>
+<body>
+    <h1>Testing some structures</h1>
+    <script>
+        var textGeneric="I am really hungry for some";
+        var textLowerCase=textGeneric.toLowerCase();
+        var textUpperCase=textGeneric.toUpperCase();
+        console.log(textGeneric);
+        console.log(textLowerCase);
+        console.log(textUpperCase);
+        var reallyLocation=textGeneric.search("really");
+        var specialword=textGeneric.substr(reallyLocation,6);
+        specialword=specialword.toUpperCase();
+        var newtext=textGeneric.replace("really",specialword);
+        console.log(newtext);
+        var foods=["cheese","pie","lunch","breakfats"];
+        //console.log(`${textGeneric} ${foods[0]}`);
+        var foodUpperCase="";
+        var even=0;
+        for (var i=0;i<foods.length;i++){
+            even=i%2;
+            if(even==0){
+                //foodUpperCase=foods[i].toUpperCase();
+                //console.log(`${textGeneric} ${foodUpperCase}`);
+                console.log(`${textGeneric} ${foods[i].toUpperCase()}`);
+            }else{
+                console.log(`${textGeneric} ${foods[i]}`);
+            }
+        }
+
+        /*for (eachFood of foods){
+            console.log(`${textGeneric} ${eachFood}`);
+        }*/ 
+    </script>
+</body>
+</html>
